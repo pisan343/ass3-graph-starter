@@ -9,16 +9,13 @@
  * when there are no more neighbors, the vertex label is returned
  */
 
-#include "edge.h"
 #include "vertex.h"
+#include "edge.h"
 #include <algorithm>
-
 
 using namespace std;
 
-ostream &operator<<(ostream &Os, const Vertex &V) {
-  return Os;
-}
+ostream &operator<<(ostream &Os, const Vertex &V) { return Os; }
 Vertex::Vertex(const string &Label) {}
 
 Vertex::~Vertex() {}

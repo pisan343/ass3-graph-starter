@@ -55,5 +55,3 @@ int Graph::mst(const string &StartLabel,
   assert(!DirectionalEdges);
   return 0;
 }
-
-

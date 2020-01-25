@@ -89,6 +89,7 @@ private:
   // create 2 edges, one from P->Q and another from Q->P with same weight
   bool DirectionalEdges;
 
+  // add additional variables and functions as needed
 };
 
 #endif // GRAPH_H
