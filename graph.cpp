@@ -25,11 +25,14 @@ bool Graph::contains(const std::string &Label) const { return false; }
 
 string Graph::getEdgesAsString(const string &Label) const { return ""; }
 
-bool Graph::connect(const string &From, const string &To, int Weight) {
+bool Graph::connect(const string &FromVertex, const string &ToVertex,
+                    int Weight) {
   return true;
 }
 
-bool Graph::disconnect(const string &From, const string &To) { return true; }
+bool Graph::disconnect(const string &FromVertex, const string &ToVertex) {
+  return true;
+}
 
 void Graph::dfs(const string &StartLabel, void Visit(const string &Label)) {}
 
@@ -50,7 +53,7 @@ Graph::dijkstra(const string &StartLabel) const {
  * @return length of the minimum spanning tree or -1 if start vertex not found
  */
 int Graph::mst(const string &StartLabel,
-               void Visit(const string &From, const string &To,
+               void Visit(const string &FromVertex, const string &ToVertex,
                           int Weight)) const {
   assert(!DirectionalEdges);
   return 0;

@@ -13,10 +13,9 @@ class Edge {
   friend class Vertex;
   friend class Graph;
 
- private:
+private:
   /** constructor with label and weight */
-   Edge(Vertex *From, Vertex *To, int Weight);
-
+  Edge(Vertex *FromVertex, Vertex *ToVertex, int Weight);
 };
 
 #endif

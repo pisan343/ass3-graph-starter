@@ -15,7 +15,7 @@
 
 using namespace std;
 
-ostream &operator<<(ostream &Os, const Vertex &V) { return Os; }
+ostream &operator<<(ostream &Ostream, const Vertex &Vertex) { return Ostream; }
 Vertex::Vertex(const string &Label) {}
 
 Vertex::~Vertex() {}

@@ -6,10 +6,9 @@
 #
 ---
 # See https://clang.llvm.org/extra/clang-tidy/#using-clang-tidy for all possible checks
-Checks: '*,-cert-err58-cpp,-cppcoreguidelines-avoid-magic-numbers,-cppcoreguidelines-owning-memory,-cppcoreguidelines-pro-bounds-array-to-pointer-decay,-cppcoreguidelines-pro-bounds-constant-array-index,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-cppcoreguidelines-special-member-functions,-fuchsia-*,-google-build-using-namespace,-google-global-names-in-headers,-google-readability-braces-around-statements,-hicpp-braces-around-statements,-hicpp-no-array-decay,-hicpp-special-member-functions,-llvm-header-guard,-modernize-pass-by-value,-modernize-use-trailing-return-type,-readability-braces-around-statements,-readability-magic-numbers,'
+# Checks: '*,-cert-err58-cpp,-cppcoreguidelines-avoid-magic-numbers,-cppcoreguidelines-owning-memory,-cppcoreguidelines-pro-bounds-array-to-pointer-decay,-cppcoreguidelines-pro-bounds-constant-array-index,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-cppcoreguidelines-special-member-functions,-fuchsia-*,-google-build-using-namespace,-google-global-names-in-headers,-google-readability-braces-around-statements,-hicpp-braces-around-statements,-hicpp-no-array-decay,-hicpp-special-member-functions,-llvm-header-guard,-modernize-pass-by-value,-modernize-use-trailing-return-type,-readability-braces-around-statements,-readability-magic-numbers,'
+Checks: '-*, bugprone-*, google-*, llvm-*, readability-*, -readability-function-cognitive-complexity, -bugprone-easily-swappable-parameters, -bugprone-narrowing-conversions, -google-build-using-namespace, -llvm-header-guard, -google-global-names-in-headers, -clang-diagnostic-error, -readability-magic-numbers'
 
-# Only defined in the newer clang-tidy not the old CSS Lab machines
-# WarningsAsErrors:  '*'
 HeaderFilterRegex: '.*'
 
 # Based on LLVM style in https://llvm.org/docs/CodingStandards.html#the-low-level-issues

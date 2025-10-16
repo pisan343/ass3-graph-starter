@@ -16,13 +16,12 @@
 #include <string>
 #include <vector>
 
-
 using namespace std;
 
 class Vertex {
   friend class Graph;
   friend class Edge;
-  friend ostream &operator<<(ostream &Os, const Vertex &V);
+  friend ostream &operator<<(ostream &Ostream, const Vertex &Vertex);
 
 public:
   /** Creates an unvisited vertex, gives it a label, and clears its
@@ -32,7 +31,6 @@ public:
 
   /** Destructor. Delete all edges from this vertex to other vertices */
   ~Vertex();
-
 };
 
-#endif  //  ASS3_GRAPHS_VERTEX_H
+#endif //  ASS3_GRAPHS_VERTEX_H

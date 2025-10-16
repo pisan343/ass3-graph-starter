@@ -37,11 +37,12 @@ public:
   // For digraphs (directed graphs), only one directed edge allowed, P->Q
   // Undirected graphs must have P->Q and Q->P with same weight
   // @return true if successfully connected
-  bool connect(const string &From, const string &To, int Weight = 0);
+  bool connect(const string &FromVertex, const string &ToVertex,
+               int Weight = 0);
 
   // Remove edge from graph
   // @return true if edge successfully deleted
-  bool disconnect(const string &From, const string &To);
+  bool disconnect(const string &FromVertex, const string &ToVertex);
 
   // @return total number of edges
   int edgesSize() const;
@@ -80,7 +81,8 @@ public:
   // ASSUMES the edge [P->Q] has the same weight as [Q->P]
   // @return length of the minimum spanning tree or -1 if start vertex not
   int mst(const string &StartLabel,
-          void Visit(const string &From, const string &To, int Weight)) const;
+          void Visit(const string &FromVertex, const string &ToVertex,
+                     int Weight)) const;
 
 private:
   // default is directional edges is true,
